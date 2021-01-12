@@ -13,6 +13,8 @@ body {
     width: 100%;
     height: 50px;
     background-color: mistyrose;
+    position: sticky;
+    top: 0;
     
     
 }
@@ -91,6 +93,11 @@ body {
     padding: 70px 0;
     text-align: center;
     opacity: 0.9;
+    
+}
+
+ul.list {
+  display: none;
 }
 
 #h01 {
@@ -237,7 +244,7 @@ body {
     height: 15px;
     width: 15px;
     border-radius: 50px;
-    background-color: rgb(192, 248, 192);
+    background-color: #a6e4da;
   }
 
   .buttons a:hover {
@@ -286,7 +293,7 @@ hr {
 }
 
 #h02 {
-    background-color: rgb(192, 248, 192);
+    background-color: #a6e4da;
     padding: 10px;
     font-size: 1.75rem;
     text-transform: uppercase;
@@ -301,9 +308,9 @@ hr {
     text-decoration: none;
     color: black;
     cursor: pointer;
-    background-color: rgb(192, 248, 192);
+    background-color: #a6e4da;
     padding: 7px;
-    border: 1px solid rgb(192, 248, 192);
+    border: 1px solid #a6e4da;
     border-radius: 5px;
     outline: none;
     display: inline-block;
@@ -328,11 +335,16 @@ hr {
     text-align: center;
 }
 
+#p-lorem {
+  display: none;
+}
 
 article#about > ul {
     list-style: square;
-    text-align: left;
+    text-align: center;
+    list-style-position: inside;
 }
+
 
 .selfie {
     width: 200px;
@@ -431,3 +443,114 @@ article#about > ul {
   } 
 
 
+/* TABLET VIEW  */
+@media only screen and (min-width: 768px) {
+  #main-header {
+    display: none;
+    
+  }
+ 
+  #sec01-div {
+    height: 500px;    
+    background-image:  url("https://static.vecteezy.com/system/resources/previews/000/180/387/non_2x/software-engineers-vectors.jpg") ;
+    background-repeat: no-repeat;
+    background-size:  contain;
+    background-position: center top;
+    background-color: #a6e4da;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    opacity: 0.9;
+    
+  }
+
+  ul.list {
+    display: flex;
+    padding-left: 0;
+    width: 50%;
+    list-style-type: none;
+    justify-content: center;
+    margin: 0;
+    justify-self: flex-start; 
+  }
+
+  .li-item {
+    width: 20%;
+  }
+
+  .list .a-link {
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.1rem;
+  }
+
+  
+
+  #h01 {
+    width: 50%;
+    color: black;
+    font-size: 2.5rem;
+  }
+  .p01 {
+    width: 50%;
+    font-size: 1rem;
+    color: #cc0e74;
+    font-weight: 600;    
+  }
+
+  #fleport {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .artic02 {
+    width: 45%;
+  }
+
+  .selfie {
+    float: left;
+  }
+
+  .abt-list {
+    padding-left: 0;
+  }
+
+  #p-lorem {
+    display: block;
+    line-height: 1.5;
+  }
+
+  #ft-iclist {
+    background-color: black;
+    width: 90%;
+    display: flex;
+    justify-self: flex-start;
+  }
+
+  .ft-ic {
+    display: block;
+    color: #cc0e74;
+    border-radius: 100%;
+    padding: 10px;
+    width: 30px;
+    margin-top: 20px;
+  }
+
+  #fone {
+      color: #cc0e74;
+  }
+
+  #mail {
+      color: #cc0e74;
+  }
+
+  .ft-link {
+    color: #cc0e74;
+  }
+
+}
