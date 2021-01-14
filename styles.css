@@ -15,19 +15,21 @@ body {
   background-color: black;
   position: sticky;
   top: 0;   
+  margin: 0;
     
 }
 
 #navbar {
   width: 100%;
+  margin: 0;
 }
 
 .nav-list {
   padding-left: 0;
   list-style-type: none;
   display: flex;
-  justify-content: flex-end;
   text-align: center;
+  margin: 0;
 }
 
 .nav-list-item {
@@ -43,6 +45,47 @@ body {
   text-decoration: none;
 }
 
+.dropbtn {
+  color: #cc0e74;
+  padding: 10px;
+  font-size: 25px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: black;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-menu a {
+  color: #cc0e74;
+  padding: 12px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-menu a:hover {
+  background-color: black
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+ul.list {
+  display: none;
+}
+
 .page-wrapper {
   width: 90%;
   padding-left: 15px;
@@ -55,9 +98,7 @@ body {
   background-image: url("https://images.pexels.com/photos/4173624/pexels-photo-4173624.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
   width: 100%;
   padding: 70px 0;
-  text-align: center;
-  opacity: 0.9;
-    
+  text-align: center;    
 }
 
 #h01 {
@@ -76,6 +117,7 @@ body {
   margin-top: 20px;
 }
 
+/**Portfolio Slideshow*/
 .slider {
   width: 270px;
   height: 150px;
@@ -320,15 +362,12 @@ article#about > ul {
 .bord01 {
    border-bottom: 1px dashed pink;
 }
-/* FOOTER STYLES */
-#main-footer {
-  margin-top: 20px;
-  background-color: #000;
-  width: 100%;
-  color: gray;
-  text-align: center;
-  font-family: "Gabriela", Helvetica, Arial, sans-serif;      
+
+/*Contact Style Rules**/
+#contact {
+  margin-top: 40px;
 }
+
 legend {
   font-size: 2rem;
 }
@@ -385,6 +424,17 @@ input[type=tel] {
   display: table;
   clear: both;
 }
+
+/* Footer Style Rules */
+#main-footer {
+  margin-top: 20px;
+  background-color: #000;
+  width: 100%;
+  color: gray;
+  text-align: center;
+  font-family: "Gabriela", Helvetica, Arial, sans-serif;      
+}
+
 .ftdiv {
   width: 90%;
   text-align: left;
@@ -412,11 +462,8 @@ input[type=tel] {
 #ft-iclist {
   width: 90%;
   background-color: #cc0e74;
-  margin-left: 15px;
-    
+  margin-left: 15px;    
 }
-
-
 
 .ft-ic {
   display: block;
@@ -425,40 +472,41 @@ input[type=tel] {
   padding: 10px;
   width: 30px;
   margin-top: 20px;
-  }
+}
 
-  #fone {
-    color: #000;
-  }
+#fone {
+  color: #000;
+}
 
-  #mail {
-    color: #000;
-  }
-  
-  .ft-link {
-    display: block;
-    text-decoration: none;
-    margin-top: 3px;
-    color: #000;
-  }
-  /*footer social images*/
-  #ft-socialmedia-icons-bg {
-    height: 20px;
-    width: 100%;
-    background-color: lightgray;    
-  }
-  
-  i.fa {
-    color: #cc0e74;
-    margin: 0 10px;
-  } 
- 
+#mail {
+  color: #000;
+}
 
-  #main-footer div:last-child {
-    margin-left: auto;
-    padding: 10px 0;
+.ft-link {
+  display: block;
+  text-decoration: none;
+  margin-top: 3px;
+  color: #000;
+}
 
-  } 
+/*footer social images*/
+#ft-socialmedia-icons-bg {
+  height: 20px;
+  width: 100%;
+  background-color: lightgray;    
+}
+
+i.fa {
+  color: #cc0e74;
+  margin: 0 10px;
+} 
+
+
+#main-footer div:last-child {
+  margin-left: auto;
+  padding: 10px 0;
+
+} 
 
 
 /* TABLET VIEW  */
@@ -478,15 +526,23 @@ input[type=tel] {
     opacity: 0.9;
     
   }
+  #navbar {
+    width: 60%;
+    margin-left: auto;
+    margin-top: 0;
+  }
+
+  .dropdown {
+    display: none;
+  }
 
   ul.list {
     display: flex;
-    padding-left: 0;
-    width: 50%;
-    list-style-type: none;
-    justify-content: center;
     margin: 0;
-    justify-self: flex-start; 
+    padding-left: 0;
+    list-style-type: none;
+    justify-content: space-around;
+    text-align: center;
   }
 
   .li-item {
@@ -494,13 +550,13 @@ input[type=tel] {
   }
 
   .list .a-link {
-    color: black;
+    margin: 10px;
+    padding: 5px;
+    display: inline-block;
+    color: #cc0e74;
     text-decoration: none;
     font-weight: 700;
-    font-size: 1.1rem;
-  }
-
-  
+  }  
 
   #h01 {
     width: 50%;
@@ -527,6 +583,7 @@ input[type=tel] {
     background-color: white;
   }
 
+  /**About Section Style Rules*/
   .selfie {
     float: left;
   }
@@ -540,7 +597,7 @@ input[type=tel] {
     line-height: 1.5;
   }
 
-  
+  /*Contact section style Rules for the Form*/
   .col-25 {
     float: left;
     width: 25%;
@@ -557,7 +614,7 @@ input[type=tel] {
     width: 75%;
   }
 
-
+  /*Footer Style Rules**/
   #ft-iclist {
     background-color: black;
     width: 90%;
@@ -605,7 +662,17 @@ input[type=tel] {
     
   }
 
-  
+  /*Navbar**/
+  #navbar {
+    width: 60%;
+    margin-left: auto;
+    margin-top: 0;
+  }
+
+  .nav-list {
+    width: 60%;
+  }
+
   #h01 {
     width: 50%;
     font-size: 3.5rem;
@@ -613,11 +680,6 @@ input[type=tel] {
   .p01 {
     width: 70%;
     font-size: 2rem;
-  }
-
-  .list .a-link {
-    color: #cc0e74;
-    font-size: 1rem;
   }
 
   .page-wrapper {
@@ -677,7 +739,6 @@ input[type=tel] {
   #kfcfoods-slide-4:target ~ .kfc-img-box {
     left: -810px;
   }
-
 
   /* For nyt slide */
   .nyt-img-box {
