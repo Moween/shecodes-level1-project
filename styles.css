@@ -290,6 +290,8 @@ hr {
 .artic02 {
     text-align: center;
     margin-top: 30px;
+    background-color: white;
+
 }
 
 #h02 {
@@ -510,7 +512,7 @@ article#about > ul {
 
   .artic02 {
     width: 45%;
-    position: relative;
+    background-color: white;
   }
 
   .selfie {
@@ -599,6 +601,21 @@ article#about > ul {
 
   .artic02 {
     width: 25%;
+    position: relative;
+    border: none;
+  }
+
+  #fleport .artic02:nth-child(2) button {
+    position: absolute;
+    bottom: 0;
+    left: 80px;
+  }
+
+  #fleport .artic02:nth-child(3) button {
+    position: absolute;
+    bottom: 0;
+    left: 80px
+
   }
 
   .slider {
@@ -661,12 +678,7 @@ article#about > ul {
     left: -540px;
   }
 
-  .buttons {
-    position: relative;
-    top: -20px;
-    
-  }
-
+ 
   
   #about {
     text-align: center;
