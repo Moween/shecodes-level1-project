@@ -16,11 +16,20 @@
 	<!---PAGE HEADER-->
 	<header id="main-header">        
 		<nav id="navbar">
-			<ul class="nav-list">
-        <li class="nav-list-item"><a class="nav-link" href="#">Home</a></li>
-        <li class="nav-list-item"><a class="nav-link" href="#about">About</a></li>
-        <li class="nav-list-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
-        <li class="nav-list-item"><a id="#contact" class="nav-link" href="#contact">Contact</a></li>
+      <div class="dropdown">
+        <span class="fa fa-bars dropbtn"></span>     
+        <ul class="nav-list dropdown-menu">
+          <li class="nav-list-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-list-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-list-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+          <li class="nav-list-item"><a id="#contact" class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div> 
+      <ul class="list">
+        <li class="li-item"><a class="a-link" href="#">Home</a></li>
+        <li class="li-item"><a class="a-link" href="#about">About</a></li>
+        <li class="li-item"><a class="a-link" href="#portfolio">Portfolio</a></li>
+        <li class="li-item"><a id="#contact" class="a-link" href="#contact">Contact</a></li>
       </ul>
 		</nav>
 	</header>
@@ -196,57 +205,55 @@
 
 			</article>
     </section>
-    <section class="page-wrapper">
-      <div id="contact">
-        <form>
-          <fieldset>
-            <legend>Contact Form</legend>
-            <div class="col-25"> 
-              <label for="cname">Company name:</label><br>
-            </div>
-            <div class="col-75">
-              <input type="text" id="cname" name="cname" required><br>
-            </div>
-            <div class="col-25">
-              <label for="typeofcom">Type of company:</label><br>
-            </div>
-            <div class="col-75">
-              <input type="text" id="type-of-company" name="type-of-company" minlength="0" maxlength="50" required><br><br>
-            </div>
-            <div class="col-25">
-              <label for="phone">Phone:</label><br>
-            </div>
-            <div class="col-75">
-              <input type="tel" id="phone" name="phone" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required><br><br>
-            </div>
-            <div class="col-25">
-              <label for="how-did-you-hear-of-me">How did you hear of me:</label><br>
-            </div>
-            <div class="col-75">
-              <input type="text" id="how-did-you-hear-of-me" name="how-did-you-hear-of-me"  minlength="0" maxlength="100"><br><br>
-            </div>
-            <div class="col-25">
-              <label for="work-hours">Work Hours:</label><br>
-            </div>
-            <div class="col-75">
-              <input type="text" id="work-hours" name="work-hours" required><br><br>
-            </div>
-            <label for="what-kind-of-offer-do-you-have-for-me">What kind of offer do you have for me:</label><br>
-            <input type="radio" id="remote" name="remote">
-            <label for="male">Remote</label><br>
-            <input type="radio" id="permanent" name="permanent" value="permanent">
-            <label for="female">Permanent</label><br>
-            <input type="radio" id="freelance" name="free-lance" value="freelance">
-            <label for="other">Freelance</label><br><br> 
-            <label for="salary-range">Salary Range between($1k - $5k) a month</label><br>
-            <input type="range" id="salary-range" name="salary-range" min="0" max="50" required><br><br>
-            <textarea name="message" rows="10" cols="30">Why should I work for you?</textarea>           
-            <br>
-            <input type="submit" value="Submit">
-          </fieldset>
-          
-        </form>
-      </div>
+    <section id="contact" class="page-wrapper sec02-bg">
+      <form>
+        <fieldset>
+          <legend>Contact Form</legend>
+          <div class="col-25"> 
+            <label for="cname">Company name:</label><br>
+          </div>
+          <div class="col-75">
+            <input type="text" id="cname" name="cname" required><br>
+          </div>
+          <div class="col-25">
+            <label for="typeofcom">Type of company:</label><br>
+          </div>
+          <div class="col-75">
+            <input type="text" id="type-of-company" name="type-of-company" minlength="0" maxlength="50" required><br><br>
+          </div>
+          <div class="col-25">
+            <label for="phone">Phone:</label><br>
+          </div>
+          <div class="col-75">
+            <input type="tel" id="phone" name="phone" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required><br><br>
+          </div>
+          <div class="col-25">
+            <label for="how-did-you-hear-of-me">How did you hear of me:</label><br>
+          </div>
+          <div class="col-75">
+            <input type="text" id="how-did-you-hear-of-me" name="how-did-you-hear-of-me"  minlength="0" maxlength="100"><br><br>
+          </div>
+          <div class="col-25">
+            <label for="work-hours">Work Hours:</label><br>
+          </div>
+          <div class="col-75">
+            <input type="text" id="work-hours" name="work-hours" required><br><br>
+          </div>
+          <label for="what-kind-of-offer-do-you-have-for-me">What kind of offer do you have for me:</label><br>
+          <input type="radio" id="remote" name="remote">
+          <label for="male">Remote</label><br>
+          <input type="radio" id="permanent" name="permanent" value="permanent">
+          <label for="female">Permanent</label><br>
+          <input type="radio" id="freelance" name="free-lance" value="freelance">
+          <label for="other">Freelance</label><br><br> 
+          <label for="salary-range">Salary Range between($1k - $5k) a month</label><br>
+          <input type="range" id="salary-range" name="salary-range" min="0" max="50" required><br><br>
+          <textarea name="message" rows="10" cols="20">Why should I work for you?</textarea>           
+          <br>
+          <input type="submit" value="Submit">
+        </fieldset>
+        
+      </form>
     </section>
   </main>
 
