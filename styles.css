@@ -510,6 +510,7 @@ article#about > ul {
 
   .artic02 {
     width: 45%;
+    position: relative;
   }
 
   .selfie {
@@ -555,6 +556,138 @@ article#about > ul {
 
 }
 
-@media only screen and (min-width: 1024) {
+/*** LARGE SCREEN ***/
+@media only screen and (min-width: 1024px) {
+  body {
+    font-size: 16px;
+  }
+
+  #sec01-div {
+    background-image: url("https://img.icons8.com/clouds/2x/flowers-portal.png");
+    background-repeat: no-repeat;
+    background-size:  initial;
+    background-position: center top;
+    background-color: #a6e4da;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
   
+  #h01 {
+    width: 50%;
+    font-size: 3.5rem;
+  }
+  .p01 {
+    width: 70%;
+    font-size: 2rem;
+  }
+
+  .list .a-link {
+    color: #cc0e74;
+    font-size: 1rem;
+  }
+
+  .page-wrapper {
+    width: 75%;
+  }
+
+  #fleport {
+    justify-content: space-around;
+    
+  }
+
+  .artic02 {
+    width: 25%;
+  }
+
+  .slider {
+    width: 100%;
+  }
+
+  .img-box {
+    width: 540px;
+    
+  }
+  
+  #google-slide-2:target ~ .img-box{
+    left: -270px;
+  }
+
+  
+  /*For kfc slide*/
+  .kfc-img-box {
+    width: 1080px;
+  }
+
+  #kfcfoods-slide-2:target ~ .kfc-img-box{
+    left: -270px;
+  }
+  #kfcfoods-slide-3:target ~ .kfc-img-box {
+    left: -540px;
+  }
+
+  #kfcfoods-slide-4:target ~ .kfc-img-box {
+    left: -810px;
+  }
+
+
+  /* For nyt slide */
+  .nyt-img-box {
+    width: 1080px;
+    
+  }
+
+  #nyt-slide-2:target ~ .nyt-img-box{
+    left: -270px;
+  }
+  #nyt-slide-3:target ~ .nyt-img-box {
+    left: -540px;
+  }
+
+  #nyt-slide-4:target ~ .nyt-img-box {
+    left: -810px;
+  }
+
+  /*For Spotify slide**/
+  .spotify-img-box {
+    width: 810px;
+  }
+  
+  #spotify-slide-2:target ~ .spotify-img-box{
+    left: -270px;
+  }
+  #spotify-slide-3:target ~ .spotify-img-box {
+    left: -540px;
+  }
+
+  .buttons {
+    position: relative;
+    top: -20px;
+    
+  }
+
+  
+  #about {
+    text-align: center;
+  }
+
+  #about p {
+    line-height: 1.75;
+  }
+
+  #about p:first-of-type {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  #p-lorem {
+    margin-top: 0;
+  }
+
+  .selfie {
+    float: none;
+  }
+
+
 }
